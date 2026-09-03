@@ -95,10 +95,9 @@ mensaje, siguiendo el formato:
 ```
 git push -u origin main
 ```
-### Investigación adicional
-Ejecuta git reflog. En tu README.md, en una sección 
-"Investigación adicional", explica en 2-3 líneas qué información 
-muestra este comando.
+## Investigación adicional
+El comando git reflog muestra el historial de movimientos y cambios que ha tenido HEAD en el repositorio. Permite consultar acciones anteriores como commits, resets y cambios de referencia, incluso cuando un commit ya no aparece en el historial normal.
+
 
 ## ✅ Entrega
 Link de tu repositorio (fork) + pantallazo de "git log --oneline"
