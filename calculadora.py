@@ -34,3 +34,5 @@ def promedio(lista_numeros):
     return resultado
 def promedio(lista_numeros1):
     return sum(lista_numeros1) / len(lista_numeros1)
+def promedio(lista_numeros2):
+    return sum(lista_numeros2) / len(lista_numeros2)
