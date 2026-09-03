@@ -26,3 +26,11 @@ def raiz_cuadrada(numero):
     if numero < 0:
         return "Error: no existe raiz de un numero negativo"
     return numero ** 0.5
+
+def porcentaje(numero, porcentaje):
+    return numero * (porcentaje / 100)
+def promedio(lista_numeros):
+    resultado = sum(lista_numeros) / len(lista_numeros)
+    return resultado
+def promedio(lista_numeros1):
+    return sum(lista_numeros1) / len(lista_numeros1)
