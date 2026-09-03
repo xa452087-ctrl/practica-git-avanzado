@@ -36,3 +36,8 @@ def promedio(lista_numeros1):
     return sum(lista_numeros1) / len(lista_numeros1)
 def promedio(lista_numeros2):
     return sum(lista_numeros2) / len(lista_numeros2)
+def maximo(lista_numeros):
+    return max(lista_numeros)
+"""MINIMO"""
+def minimo(lista_numeros):
+    return min(lista_numeros)
