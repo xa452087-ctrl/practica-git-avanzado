@@ -10,4 +10,6 @@ def multiplicar(a, b):
     return a * b
 
 def dividir(a, b):
+    if b == 0:
+        return "No se puede dividir entre cero"
     return a / b
