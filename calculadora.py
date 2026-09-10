@@ -41,3 +41,6 @@ def maximo(lista_numeros):
 """MINIMO"""
 def minimo(lista_numeros):
     return min(lista_numeros)
+
+
+#Estoy en la clase del profesor victor Ibardo que nos esta enseñando git (Explica muy bien (:  )
