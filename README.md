@@ -98,6 +98,85 @@ git push -u origin main
 ## Investigación adicional
 El comando git reflog muestra el historial de movimientos y cambios que ha tenido HEAD en el repositorio. Permite consultar acciones anteriores como commits, resets y cambios de referencia, incluso cuando un commit ya no aparece en el historial normal.
 
+## 🚀 Actividad — Versionado, Stash y Tag
 
+### 📦 ¿Qué es git stash?
+
+`git stash` permite guardar temporalmente los cambios que todavía no hemos hecho commit. Esto deja el proyecto limpio para poder realizar otra tarea sin perder nuestro trabajo.
+
+Por ejemplo:
+
+```bash
+git stash
+```
+
+Para recuperar los cambios guardados:
+
+```bash
+git stash pop
+```
+
+También podemos consultar los stash que tenemos guardados:
+
+```bash
+git stash list
+```
+
+Si tenemos varios stash, podemos recuperar uno específico:
+
+```bash
+git stash apply "stash@{1}"
+```
+
+Para eliminar un stash específico:
+
+```bash
+git stash drop "stash@{1}"
+```
+
+Y para eliminar todos los stash:
+
+```bash
+git stash clear
+```
+
+### 🏷️ ¿Qué es git tag?
+
+`git tag` permite colocar una etiqueta sobre un commit específico para identificar una versión importante del proyecto.
+
+Por ejemplo:
+
+```bash
+git tag v1.0
+```
+
+Para ver las etiquetas existentes:
+
+```bash
+git tag
+```
+
+Y para subir las etiquetas a GitHub:
+
+```bash
+git push --tags
+```
+
+En este proyecto se creó la etiqueta `v1.0` para identificar la versión actual de la calculadora.
+
+### 📌 Versionado semántico
+
+El versionado semántico utiliza tres números:
+
+**MAJOR.MINOR.PATCH**
+
+* **MAJOR:** cambia cuando se realizan modificaciones grandes que pueden romper la compatibilidad con versiones anteriores. Ejemplo: `v1.0.0` → `v2.0.0`.
+* **MINOR:** cambia cuando se agrega una nueva funcionalidad sin romper lo que ya funcionaba. Ejemplo: `v1.0.0` → `v1.1.0`.
+* **PATCH:** cambia cuando se corrigen errores pequeños sin agregar cambios importantes. Ejemplo: `v1.1.0` → `v1.1.1`.
+
+En este proyecto, `v1.0` representa una versión estable de la calculadora después de practicar y aplicar los comandos de versionado de Git.
 ## ✅ Entrega
 Link de tu repositorio (fork) + pantallazo de "git log --oneline"
+## Entrega
+
+
